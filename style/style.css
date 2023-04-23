@@ -1,0 +1,196 @@
+/*Confirurações gerais*/
+:root{
+    --color-one: #9381FF;
+    --color-two: #E9FF70;
+    --color-claro: #fdf0d5;
+    --color-text: #343a40;
+    --color-border: #b3b6bb;
+    --fundo-site: #edede9;
+}   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url('../img/fundo.jpg');
+}
+
+table{
+    width: 1180px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: var(--fundo-site);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-claro);
+}
+
+a:hover{
+    color: var(--color-text);
+}
+/*Fim configurações gerais*/
+
+/*Confirurações header*/
+.logo{
+    width: 100%;
+    height: 161px;
+    background-image: url('../img/logo.png');
+}
+
+.logo p{
+    display: none;
+}
+
+.menu{
+    background-color: var(--color-one);
+    box-shadow: -1px 2px 15px -1px rgba(0,0,0,0.30);
+    margin-bottom: 50px;
+}
+
+.menu ul{
+    padding-left: 50px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.menu ul li:hover:not(.ativo){
+    background-color: var(--color-two);
+    border-radius: 8px;
+}
+
+.ativo{
+    background-color: var(--color-two);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.ativo a{
+    color: var(--color-text);
+}
+/*Fim Confirurações header*/
+
+
+/*Configurações main*/
+.main{
+    width: 659px; 
+    padding: 15px 10px;
+    color: var(--color-text);
+}
+
+.perfil{
+    display: flex;
+    padding-top: 15px;
+    margin-bottom: 35px;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+.linha{
+    border-right: 1px solid var(--color-border);
+}
+/*Fim configurações main*/
+
+/*Configurações aside*/
+.aside{
+    display: flex;
+    flex-direction: column;
+    width: 521px;
+    color: var(--color-text);
+}
+
+.vantagens,.contato{
+    padding: 15px 35px;
+}
+
+.vantagens ul li{
+    padding: 12px 25px;
+    list-style: none;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.social{
+    padding: 12px 35px;
+}
+
+i{
+    font-size: 25px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+i:hover{
+    color: var(--color-one);
+}
+/*Fim configurações aside*/
+
+/*Configurações page aulas*/
+.box{
+    padding: 30px;
+}
+
+.periodo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--color-one);
+    transition: 1s;
+}
+
+.button:hover{
+    background-color: var(--color-two);
+}
+/*Fim configurações page aulas*/
+
+/*Configurações page sobre*/
+.text{
+    text-align: center;
+}
+
+.text h1{
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+.text p{
+    line-height: 25px;
+}
+
+figure{
+    float: left;
+    padding: 5px;
+    border: 1px solid var(--color-border);
+}
+
+.image > figure{
+    margin-top: 15px;
+}
+/*Fim configurações page sobre*/
+
+.footer{
+    position: relative;
+    top: 15px;
+    text-align: center;
+    height: 34px;
+    background-color: #9381FF;
+    color: var(--color-claro);
+}
+
